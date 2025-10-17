@@ -7,23 +7,6 @@
   "stac_version": "1.0.0",
   "description": "FAIRSenDD: FAIR workflow for Sentinel-1-based Deforestation Detection leverages Recurrence Quantification Analysis to effectively detect forest change in a given time series for each location individually, allowing robust and scalable classifications. This project from the Max Planck Institute for Biogeochemistry is part of the ESA Science Result Long-Term Availability & Reusability Demonstrator Initiative. We developed the workflow following FAIR principles and published it as OGC Best Practice for Earth Observation Application Package, as well as an openEO process. This is the first project evaluating the feasibility of using Julia in openEO.",
   "license": "MIT",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180,
-          -90,
-          180,
-          90
-        ]
-      ]
-    },
-    "temporal": {
-      "interval": [
-        null
-      ]
-    }
-  },
   "links": [
     {
       "rel": "root",
@@ -39,13 +22,21 @@
     },
     {
       "href": "https://earthyscience.github.io/FAIRSenDD/",
-      "rel": "via"
+      "rel": "via",
+      "title": "Website"
+
     },
     {
       "rel": "related",
       "href": "../../themes/land/catalog.json",
       "type": "application/json",
       "title": "Theme: Land"
+    },
+    {
+      "rel": "child",
+      "href": "../../workflows/fairsendd/collection.json",
+      "type": "application/json",
+      "title": "FAIRSenDD: FAIR workflow for Sentinel-1 based Deforestation Detection"
     }
   ],
   "stac_extensions": [
@@ -53,8 +44,6 @@
     "https://stac-extensions.github.io/themes/v1.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
-  "osc:type": "project",
-  "osc:status": "completed",
   "themes": [
     {
       "scheme": "https://github.com/stac-extensions/osc#theme",
